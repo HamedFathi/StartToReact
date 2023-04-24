@@ -1,7 +1,32 @@
 {
-  "name": "react-ts-app",
+  "name": "start-to-react",
   "private": true,
   "version": "0.0.0",
+  "description": "A react starter kit to start your journey.",
+  "keywords": [
+    "react",
+    "vite",
+    "vitest",
+    "playwright",
+    "eslint",
+    "prettier",
+    "husky",
+    "mui",
+    "tailwindcss",
+    "emotion",
+    "zustand",
+    "jotai"
+  ],
+  "homepage": "https://github.com/HamedFathi/StartToReact",
+  "bugs": {
+    "url": "https://github.com/HamedFathi/StartToReact/issues"
+  },
+  "license": "MIT",
+  "author": "Hamed Fathi <hamedfathi.contact@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/HamedFathi/StartToReact"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite",
@@ -86,10 +111,13 @@
     "vite": "^4.3.1",
     "vitest": "^0.30.1"
   },
-  "license": "MIT",
   "config": {
     "commitizen": {
       "path": "./node_modules/cz-conventional-changelog"
     }
+  },
+  "engines": {
+    "node": ">=18",
+    "npm": ">=8"
   }
 }
