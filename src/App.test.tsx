@@ -9,11 +9,7 @@ describe('App', () => {
     render(<WrappedApp />);
     // ACT
     // EXPECT
-    expect(
-      screen.getByRole('heading', {
-        level: 1,
-      })
-    ).toHaveTextContent('Hello World!');
+    expect(screen.getByTestId('title')).toHaveTextContent('#TailwindCSS');
   });
   it('Renders not found if invalid path', () => {
     render(
@@ -21,10 +17,6 @@ describe('App', () => {
         <App />
       </MemoryRouter>
     );
-    expect(
-      screen.getByRole('heading', {
-        level: 1,
-      })
-    ).toHaveTextContent('Not Found');
+    expect(screen.getByTestId('error')).toHaveTextContent('Error404');
   });
 });
