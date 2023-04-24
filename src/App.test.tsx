@@ -14,7 +14,7 @@ describe('App', () => {
       screen.getByRole('heading', {
         level: 1,
       })
-    ).toHaveTextContent('Hello World');
+    ).toHaveTextContent('Hello World!');
   });
   it('Renders not found if invalid path', () => {
     render(
