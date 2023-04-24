@@ -3,6 +3,7 @@ module.exports = {
     browser: true,
     es2021: true,
   },
+  ignorePatterns: ['node_modules', 'dist'],
   extends: [
     'airbnb',
     'airbnb-typescript',
@@ -22,5 +23,12 @@ module.exports = {
   rules: {
     'react/react-in-jsx-scope': 0,
     'import/no-extraneous-dependencies': ['off'],
+    'no-console': 'error',
+    'prettier/prettier': [
+      'off',
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
 };

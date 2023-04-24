@@ -21,7 +21,9 @@
     ".eslintrc.cjs",
     "tailwind.config.js",
     "postcss.config.js",
-    "src"
+    "playwright.config.ts",
+    "src",
+    "playwright-tests"
   ],
   "references": [{ "path": "./tsconfig.node.json" }]
 }
