@@ -21,7 +21,7 @@
     "vite.config.ts",
     ".eslintrc.cjs",
     "tailwind.config.js",
-    "postcss.config.js",
+    "postcss.config.mjs",
     "playwright.config.ts",
     "src",
     "playwright-tests"

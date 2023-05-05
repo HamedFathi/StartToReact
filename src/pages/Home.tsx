@@ -1,9 +1,12 @@
+import { themeClass } from '../theme.css';
+import titleCss from './Home.css';
+
 function Home() {
   return (
     <article className="max-w-2xl px-6 py-24 mx-auto space-y-12 dark:bg-gray-800 dark:text-gray-50">
-      <div className="w-full mx-auto space-y-4 text-center">
+      <div className={`w-full mx-auto space-y-4 text-center ${themeClass}`}>
         <p
-          className="text-xs font-semibold tracking-wider uppercase"
+          className={`text-xs font-semibold tracking-wider uppercase ${titleCss}`}
           data-testid="title"
         >
           #TailwindCSS

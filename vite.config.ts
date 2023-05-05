@@ -5,6 +5,7 @@
 import { PluginOption, defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { visualizer } from 'rollup-plugin-visualizer';
+import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
 
 // https://vitejs.dev/config/
 export default defineConfig({
@@ -17,6 +18,9 @@ export default defineConfig({
       brotliSize: true,
       filename: 'analytics.html',
     }) as PluginOption,
+    vanillaExtractPlugin({
+      emitCssInSsr: true,
+    }),
   ],
   test: {
     globals: true,
