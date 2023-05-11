@@ -6,10 +6,12 @@ import { PluginOption, defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 import { visualizer } from 'rollup-plugin-visualizer';
 import { vanillaExtractPlugin } from '@vanilla-extract/vite-plugin';
+import mdx from '@mdx-js/rollup';
 
 // https://vitejs.dev/config/
 export default defineConfig({
   plugins: [
+    mdx(),
     react(),
     visualizer({
       template: 'treemap', // or sunburst or network
